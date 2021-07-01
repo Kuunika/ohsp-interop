@@ -23,7 +23,7 @@ export class DashboardDataService {
         },
       })
       .toPromise();
-    return response;
+    return response.data;
   }
 
   async aggregates() {

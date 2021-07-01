@@ -33,7 +33,8 @@ export class OhspService {
         },
       })
       .toPromise();
-    return response;
+
+    return response.data;
   }
 
   private async getData(_resource: string): Promise<AxiosResponse> {
@@ -46,7 +47,7 @@ export class OhspService {
         },
       })
       .toPromise();
-    return response;
+    return response.data;
   }
 
   async get(resource: string): Promise<AxiosResponse> {
